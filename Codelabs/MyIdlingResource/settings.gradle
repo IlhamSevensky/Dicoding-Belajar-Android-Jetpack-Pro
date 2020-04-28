@@ -1,0 +1,2 @@
+rootProject.name='MyIdlingResource'
+include ':app'

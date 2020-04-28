@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Proyek Academies</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="dateline">Dateline</string>
+    <string name="description_module">Deskripsi Modul</string>
+    <string name="example">Example</string>
+    <string name="start_learn">Mulai Belajar</string>
+    <string name="list_module">Daftar Modul</string>
+    <string name="home">Home</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="menu_bookmark">bookmark</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="last_seen">Terakhir dilihat</string>
+    <string name="message_undo">Batalkan menghapus item sebelumnya?</string>
+    <string name="message_ok">OK</string>
+    <string name="deadline_date">Deadline %s</string>
+    <string name="share_text">Segera daftar kelas %s di dicoding.com</string>
+    <string name="title_activity_detail_course">Detail Course</string>
+</resources>

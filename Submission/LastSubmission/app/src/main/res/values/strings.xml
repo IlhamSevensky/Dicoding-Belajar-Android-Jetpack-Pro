@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Movie Catalog</string>
+    <string name="toolbar_title_movie">Now Playing Movie</string>
+    <string name="toolbar_title_tvshow">TV Show On The Air</string>
+    <string name="tab_title_movie">List Movie</string>
+    <string name="tab_title_tvshow">List TV Show</string>
+    <string name="bottom_nav_title_movie">Movie</string>
+    <string name="bottom_nav_title_tvshow">TV Show</string>
+    <string name="bottom_nav_title_favorite">Favorite</string>
+    <string name="toolbar_title_detail_movie">Detail Movie</string>
+    <string name="toolbar_title_detail_tvshow">Detail TV Show</string>
+
+    <string name="desc_image_highlight">Image Highlight</string>
+    <string name="lb_description">Description</string>
+
+    <!--Empty States-->
+    <string name="empty_state_title_no_conn">No internet connection</string>
+    <string name="empty_state_title_no_favorite_item">No favorites yet.</string>
+    <string name="empty_state_desc_no_favorite_item_movie">You don\'t have a list of favorite movies</string>
+    <string name="empty_state_desc_no_favorite_item_tvshow">You don\'t have a list of favorite tv show</string>
+
+</resources>

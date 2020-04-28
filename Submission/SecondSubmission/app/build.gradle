@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.ilham.jpro.secondsubmission"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        // API The Movie DB
+        buildConfigField("String", "TMDB_API_KEY", '"378aa10ea738ce4cb6ab3dd53569c97d"')
+        buildConfigField("String", "BASE_URL_TMDB", '"https://api.themoviedb.org/3/"')
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation "androidx.test:rules:1.2.0"
+    testImplementation "androidx.arch.core:core-testing:2.1.0"
+
+    // Espresso
+    def espresso_version = "3.2.0"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espresso_version"
+    androidTestImplementation "androidx.test.espresso:espresso-contrib:$espresso_version"
+
+    // Rounded ImageView
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    // Bubble Navigation
+    implementation 'com.gauravk.bubblenavigation:bubblenavigation:1.0.7'
+
+    // Material Design
+    implementation 'com.google.android.material:material:1.1.0'
+
+    // Glide
+    def glide_version = "4.11.0"
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide_version"
+
+    // Architecture Component
+    // ViewModel Dependency
+    def viewModel_version = "2.2.0"
+    implementation "androidx.lifecycle:lifecycle-extensions:$viewModel_version"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$viewModel_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$viewModel_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$viewModel_version"
+
+    //mockito
+    def mockito_version = "2.23.4"
+    testImplementation "org.mockito:mockito-core:$mockito_version"
+    testImplementation "org.mockito:mockito-inline:$mockito_version"
+
+    // mockito kotlin
+    testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:2.1.0"
+
+    // idling resource
+    implementation "androidx.test.espresso:espresso-idling-resource:3.2.0"
+
+    // Retrofit Dependency
+    def retrofit_version = "2.7.1"
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+
+    // okHttp3 Dependency
+    def okHttp3_version = "4.4.0"
+    implementation "com.squareup.okhttp3:okhttp:$okHttp3_version"
+    implementation "com.squareup.okhttp3:okhttp-urlconnection:$okHttp3_version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$okHttp3_version"
+
+    // Coroutine Dependency
+    def coroutine_version = "1.3.1"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutine_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine_version"
+}

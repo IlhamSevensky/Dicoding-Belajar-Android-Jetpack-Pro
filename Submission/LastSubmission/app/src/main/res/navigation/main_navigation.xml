@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/navigation_movie">
+
+    <fragment
+        android:id="@+id/navigation_movie"
+        android:name="com.ilham.jpro.lastsubmission.ui.home.content.movie.MovieFragment"
+        android:label="@string/toolbar_title_movie"
+        tools:layout="@layout/fragment_movie" />
+    <fragment
+        android:id="@+id/navigation_tvshow"
+        android:name="com.ilham.jpro.lastsubmission.ui.home.content.tvshow.TvShowFragment"
+        android:label="@string/toolbar_title_tvshow"
+        tools:layout="@layout/fragment_tv_show" />
+    <fragment
+        android:id="@+id/navigation_favorite"
+        android:name="com.ilham.jpro.lastsubmission.ui.home.content.favorite.FavoriteFragment"
+        android:label="@string/bottom_nav_title_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/navigation_favorite_movie"
+        android:name="com.ilham.jpro.lastsubmission.ui.home.content.favorite.movie.FavoriteMovieFragment"
+        android:label="fragment_favorite_movie"
+        tools:layout="@layout/fragment_favorite_movie" />
+    <fragment
+        android:id="@+id/navigation_favorite_tvshow"
+        android:name="com.ilham.jpro.lastsubmission.ui.home.content.favorite.tvshow.FavoriteTvShowFragment"
+        android:label="fragment_favorite_tv_show"
+        tools:layout="@layout/fragment_favorite_tv_show" />
+
+</navigation>

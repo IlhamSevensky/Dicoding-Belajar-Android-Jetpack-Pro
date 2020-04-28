@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Movie Catalog</string>
+    <string name="tab_title_movie">Movie</string>
+    <string name="tab_title_tvshow">TV Show</string>
+    <string name="toolbar_title_detail_movie">Detail Movie</string>
+    <string name="toolbar_title_detail_tvshow">Detail TV Show</string>
+
+    <string name="desc_image_highlight">Image Highlight</string>
+    <string name="lb_description">Description</string>
+
+</resources>
